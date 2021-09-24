@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFoodDeliveryUI.Views.MainPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+              VerticalOptions="CenterAndExpand"
+              ColumnDefinitions="*,*"
+              Padding="30,20,30,0">
+            <!--boton retroceder-->
+            <Button Grid.Row="0" 
+                    Grid.Column="0"
+                    ImageSource="ArrowLeft.png"
+                    HorizontalOptions="Start"
+                    WidthRequest="50"
+                    BackgroundColor="#fee489"
+                    CornerRadius="15"/>
+            
+            <!--skip Label-->
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Text="SKIP"
+                   HorizontalTextAlignment="End"
+                   FontAttributes="Bold"/>
+            
+            <!--imagen principal con el fondo-->
+            <Image Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Aspect="AspectFill"
+                   Source="Background.png"/>
+            <Image Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Source="Food.png"
+                   HeightRequest="300"
+                   Aspect="AspectFill"
+                   VerticalOptions="Start"/>
+            
+            <!--Título-->
+            <Label Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   HorizontalTextAlignment="Center"
+                   FontSize="40"
+                   FontAttributes="Bold">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Okey" TextColor="Chocolate"/>
+                        <Span Text="FOOD" TextColor="Red"/>
+                    </FormattedString>
+                </Label.FormattedText>       
+            </Label>
+            
+            <!--Descripción-->
+            <Label Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Text="Order Food and wait for home,&#10; easy and fast."
+                   Margin="5,20"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            
+            <!--Boton circular-->
+            <Button Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ImageSource="WhiteArrow.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="#fdc912"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    CornerRadius="50"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
