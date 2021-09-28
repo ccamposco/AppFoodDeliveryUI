@@ -15,6 +15,7 @@ namespace AppFoodDeliveryUI.Views
         public DeliveryPage()
         {
             InitializeComponent();
+            BindingContext = new ViewModels.DeliveryViewModel();
         }
     }
 }

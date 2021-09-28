@@ -10,7 +10,7 @@ namespace AppFoodDeliveryUI
         {
             InitializeComponent();
 
-            MainPage = new Views.MainPage();
+            MainPage = new Views.DeliveryPage();
         }
 
         protected override void OnStart()
